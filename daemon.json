@@ -1,0 +1,11 @@
+{
+  "runtimes": {
+    "kata": {
+      "runtimeType": "/opt/kata/runtime-rs/bin/containerd-shim-kata-v2",
+      "options": {
+        "ConfigPath": "/opt/kata/share/defaults/kata-containers/runtime-rs/configuration-qemu-runtime-rs.toml"
+      }
+    }
+  },
+  "default-runtime": "kata"
+}

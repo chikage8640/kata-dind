@@ -1,0 +1,14 @@
+services:
+  kata-dind:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kata-dind
+    privileged: true
+    shm_size: '4g'
+    devices:
+      - /dev/kvm:/dev/kvm
+    volumes:
+      - ./docker-data:/var/lib/docker
+      - ./home:/home/user
+      
